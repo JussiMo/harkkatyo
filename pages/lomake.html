@@ -5,22 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Harjoitustyö</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link rel="stylesheet" href="../style/lomake.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     </head>
-    <body>
+    <body style="background-color: rgba(230, 230, 230, 0.24);">
         <header>
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Aloitus</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
@@ -38,18 +37,21 @@
         </header>
         <div class="container">
             <label>Name</label><br>
-            <input type="text" name="name" id="name"></input><br>
+            <input type="text" id="name"></input><br>
             <label>Note</label><br>
-            <textarea id="viesti"></textarea><br>
+            <textarea id="note"></textarea><br>
             <input type="checkbox" name="important" id="important">
             <label for="important">Important</label><br>
-            <button>Add note</button>
+            <button id="add" type="button" class="btn btn-secondary">Add note</button>
+            <hr>
+            <div id="notes">
+            </div>
         </div>
-        <hr>
-
-
-        
-        <script src="../js/lomake.js"></script>
+        <footer>
+            <p>Tekijä: Jussi Molin</p>
+            <p>Web-tekniikat harjoitustyö</p>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        <script src="../js/lomake.js"></script>
     </body>
 </html>
