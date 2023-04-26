@@ -4,8 +4,6 @@ let checkbox = document.getElementById("important");
 let notes = document.getElementById("notes");
 document.getElementById("add").addEventListener("click",addNote);
 
-
-
 function addNote () {
     let now = new Date();
     let day = now.getDate()
@@ -17,10 +15,7 @@ function addNote () {
     dateSpan.textContent = date;
     h3.textContent = poster.value;
     p.textContent = note.value;
-    
-
-console.log(dateSpan)
-    
+        
     if (checkbox.checked) {
         dateSpan.classList.add("important");
         h3.classList.add("important");
