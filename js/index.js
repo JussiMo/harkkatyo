@@ -8,5 +8,5 @@ function chuck() {
       let hr = document.createElement("hr");
       document.body.appendChild(hr);
     });
-  }
+}
   
