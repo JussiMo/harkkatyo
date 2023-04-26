@@ -4,9 +4,9 @@ function chuck() {
     .then(data => {
       let h5 = document.createElement("h5");
       h5.textContent = data.value;
-      document.body.appendChild(h5);
+      document.getElementById("chuckie").appendChild(h5);
       let hr = document.createElement("hr");
-      document.body.appendChild(hr);
+      document.getElementById("chuckie").appendChild(hr);
     });
-}
+  }
   
